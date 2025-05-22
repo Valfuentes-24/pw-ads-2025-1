@@ -8,7 +8,7 @@ import MainMenu from './MainMenu';
 export default function TopBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" enableColorOnDark>
         <Toolbar variant="dense">
           
           <MainMenu />
