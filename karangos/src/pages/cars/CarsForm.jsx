@@ -13,9 +13,9 @@ import { feedbackWait, feedbackNotify, feedbackConfirm } from '../../ui/Feedback
 export default function CarsForm() {
   const navigate = useNavigate()
   const params = useParams()
-
+  
   const colors = [
-    'Amarelo', 'Azul', 'Bege', 'Branco', 'Cinza',
+    'Amarelo', 'Azul', 'Bege', 'Branco', 'Cinza', 'Cinza claro', 'Cinza escuro',
     'Dourado', 'Laranja', 'Marrom', 'Prata', 'Preto', 'Rosa', 'Verde', 'Vermelho'
   ].sort()
 
@@ -67,7 +67,7 @@ export default function CarsForm() {
     const { name, value, type, checked } = event.target
     const newValue = type === 'checkbox' ? checked : value
 
-    // Validação do campo plates
+
     if (name === 'plates') {
       const regex = /^[A-Z]{0,3}-?[A-J0-9]{0,1}[0-9]{0,3}$/i
       if (!regex.test(value.toUpperCase())) return

@@ -6,6 +6,7 @@ import CarsForm from '../pages/cars/CarsForm'
 
 import CustomersList from '../pages/customers/CustomersList'
 import CustomersForm from '../pages/customers/CustomersForm'
+import Sobre from '../pages/Sobre'
 
 export default function AppRoutes() {
   return <Routes>
@@ -18,5 +19,8 @@ export default function AppRoutes() {
     <Route path="/customers" element={ <CustomersList /> } />
     <Route path="/customers/new" element={ <CustomersForm /> } />
     <Route path="/customers/:id" element={ <CustomersForm /> } />
+
+     <Route path="/sobre" element={ <Sobre/> } />
+    
   </Routes>
 }
